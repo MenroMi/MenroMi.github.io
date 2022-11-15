@@ -1,0 +1,374 @@
+@media (max-width: 1400px)
+    .menu
+        &_item
+            padding-right: 46px
+
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 31px
+    .promo
+        &_title
+            font-size: 50px
+    .pluses
+        &_reason
+              &_descr
+                width: 300px
+    .mobile
+        &_item
+            width: 290px
+    
+    .footer_menu
+        &_apps
+            display: flex
+            justify-content: flex-end
+            flex-wrap: wrap
+
+@media (max-width: 1088px)
+    .menu
+        &_item
+            padding-right: 22px
+    .footer_menu
+        &_nav
+            width: 300px
+        &_apps
+            flex-direction: column
+
+
+@media (max-width: 991.98px)
+    .menu
+        &_item
+            padding-right: 8px
+            &_link
+                font-size: 13px
+    .subheader
+        &_logo
+            &_img
+                width: 100%
+            &_title
+                font-size: 12px
+        &_btn
+            width: 100%
+            height: 41px
+            margin: 22px auto
+            padding-top: 10px
+        &_phone
+            &_number
+            font-size: 19px
+
+    .promo
+        &_title
+            font-size: 40px
+        &_subtitle
+            font-size: 30px
+        &_descr
+            font-size: 17px
+
+    .pluses
+        &_reason
+            flex-direction: column
+            &_img
+                margin-bottom: 20px
+
+    .mobile
+        &_item
+            width: 215px
+            height: 240px
+            padding-top: 55px
+            margin-bottom: 25px
+
+    .choose_car
+        min-height: 820px
+        &_img
+            width: 600px
+    .conditions
+        &_check
+            li
+                font-size: 15px
+        .grapefruit
+            .conditions_check
+                li
+                    font-size: 15px
+    .footer_menu
+        &_nav
+            width: 300px
+        &_apps
+            flex-direction: column
+
+        
+
+@media (max-width: 767.98px)
+    .menu
+        position: fixed
+        top: 0
+        right: -70%
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
+        background-color: rgba(0, 0, 0, 0.8)
+        width: 50%
+        height: 100%
+        padding: 20px 15px
+        transition: 0.6s all
+        &_item
+            padding-right: 0
+            margin: 10px 0
+            border: none
+            &_link
+                transition: 0.5s all
+                font-size: 25px
+
+    .menu_burger
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        // height: 14px
+        span
+            display: block
+            background-color: #fff
+            margin-bottom: 5px
+            height: 3px
+            transition: 0.4s all
+            &:last-child
+                margin-bottom: 0
+        &_active
+            span
+                margin-bottom: -3px
+                &:first-child
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: rotate(45deg)
+                    
+    .active_mobile_menu
+        right: 0
+
+    .subheader
+        &_logo
+            &_title
+                font-size: 12px
+        &_phone
+            display: none
+        &_mobile_size
+            .subheader_phone_number
+                margin-top: 10px
+                font-size: 18px
+                text-align: center
+                display: block
+            .subheader_btn
+                margin-top: 12px
+                height: 40px
+                width: 90%
+                padding-top: 7px
+                font-size: 18px
+    
+    .promo
+        &_title
+            font-size: 36px
+        &_subtitle
+            font-size: 27px
+        &_descr
+            font-size: 15px
+
+    .mobile
+        padding: 48px 0 70px 0
+        &_item
+            width: 300px
+            height: 260px
+    .title
+        font-size: 30px
+
+    .choose_car
+        min-height: 750px
+        &_img
+            width: 500px
+    .conditions
+        &_check
+            li
+                line-height: 1.8
+        .grapefruit
+            .conditions_check
+                li
+                    line-height: 1.8
+    .footer
+        &_divider
+            &::before
+                width: 280px
+        &_menu
+            &_social
+                flex-wrap: wrap
+                width: 73px
+                .media
+                    margin: 2px
+            &_wrapper
+                width: 60%
+        
+
+@media (max-width: 575.98px)
+    nav
+        height: 30px
+
+    .menu
+        &_item
+            &_link
+                font-size: 20px
+
+    .subheader
+        height: 60px
+        margin-top: 30px
+        &_logo
+            &_title
+                display: none
+        &_mobile_size
+            .subheader
+                &_phone
+                    &_number
+                        font-size: 12px
+                &_btn
+                    height: 22px
+                    width: 110px
+                    font-size: 10px
+                    padding-top: 3px
+                    margin-top: 9px
+    .promo
+        padding: 143px 0 35px 0
+        min-height: 400px
+        &_title
+            line-height: 0.9
+            font-size: 32px
+        &_subtitle
+            font-size: 23px
+            margin-top: 33px
+        &_descr
+            display: none
+        &_btn
+            width: 210px
+            height: 50px
+            padding: 12px 0
+
+    .pluses
+        padding: 20px 0 50px
+        &_head
+            .title
+                font-size: 20px 
+        &_reason
+            &_descr
+                min-width: 290px
+                margin-left: 0
+
+    .menu
+        width: 70%
+
+    .mobile
+        &_item
+            width: 290px
+            height: 255px
+    .choose_car
+        min-height: 390px
+        background: none
+        &_black_header
+            padding-top: 25px
+        &_img
+            width: 100%
+            padding-left: 4px
+            padding-right: 16px
+        &_descr
+            padding: 23px 37px 0 34px
+            font-size: 17px
+            font-weight: 300
+            text-align: center
+            color: #fff
+            line-height: 1.8
+        .title, .subtitle
+            display: none
+    
+    .conditions
+        padding: 25px 15px 25px 15px
+        &_check
+            li
+                line-height: 1.5
+                font-size: 13px
+                &::before
+                    top: 0
+        &_descr
+            font-size: 15px
+        .grapefruit
+            .conditions_check
+                li
+                    line-height: 1.5
+                    font-size: 13px
+                    &::before
+                        top: 0
+            .conditions_descr
+                font-size: 15px
+    
+    .map
+        min-height: 360px
+        padding: 25px 0 30px 0
+        &_cities
+            margin-top: 216px
+        .title
+            margin-top: 15px
+            font-size: 16px
+        .subtitle
+            font-size: 14px
+    
+
+    .title
+        font-size: 20px
+    .subtitle
+        font-size: 15px
+
+    footer
+        padding: 25px 0 16px 0
+
+    .footer
+        &_divider
+            &::before
+                width: 253px
+        &_menu
+            padding-top: 22px
+            flex-direction: column
+            align-content: center
+            &_wrapper
+                width: 100%
+                &:nth-child(1)
+                    order: 2
+                    display: flex
+                    justify-content: center
+                &:nth-child(2)
+                    order: 1
+                &:nth-child(3)
+                    order: 3
+                    justify-content: center
+            &_nav
+                width: 270px
+            &_social
+                width: 160px
+                flex-wrap: nowrap
+                .media
+                    margin: 20px 9px 20px 0
+            &_apps
+                flex-direction: row
+                flex-wrap: nowrap
+                margin-top: 20px
+                img
+                    margin-right: 6px
+
+                
+            
+        
+
+    
+
+
+
+            
+
+
+
+        
+        
