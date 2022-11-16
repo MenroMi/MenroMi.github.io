@@ -1,5 +1,5 @@
 html {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: Plus Jakarta Sans, sans-serif;
 }
 
 * {
@@ -45,6 +45,7 @@ body {
 }
 
 .name-not {
+  font-size: x-large;
   font-weight: 800;
 }
 .name-not:hover {
