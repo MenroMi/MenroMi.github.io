@@ -41,8 +41,7 @@ body {
 }
 
 .name-not {
-  font-size: x-large;
-  font-weight: 700;
+  font-weight: 800;
 }
 .name-not:hover {
   color: rgb(0, 0, 0);
