@@ -1,25 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css"
+        integrity="sha512-a+PObWRxNVh4HZR9wijCGj84JgJ/QhZ8dET09REfYz2clUBjKYhGbOmdy9KEHilYKgbMSIHNQEsonv/r75mHXw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-reboot.min.css"
+        integrity="sha512-OGIUn1RUUYIrr7oDnv8nV5QHFXj1fGDmT+qpcVvDdxkzsnQYhiikXow06DDNneSYAeLVShIuVCCAsdLv4SPkvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/styles.min.css">
 </head>
+
 <body>
 
-    <div class="window-not">
-        <header>
-            <div class="header-not">
-                <div class="name-not">Notifications</div>
-                <div class="counter">3</div>
-                <div class="mark">Marks all as read</div>
-        </header>
-        <hr>
+    <section class="background">
+        <div class="container">
+            <div class="row">
+                <div class="window col-7 offset-md-2">
+                    <div class="header">
+                        <div class="header_left_side">
+                            <div class="title">Notifications</div>
+                            <div class="counter">0</div>
+                        </div>
+                        <div class="marks">Marks all as read</div>
+                    </div>
+                    <hr>
+                    <ul class="notifications">
+                        <li class="notification active">
+                            <img class="user_img" src="./img/avatar-mark-webber.webp" alt="user-mark">
+                            <div class="notification_wrapper">
+                                <div class="notification_text"><span class="user_name">Mark Webber</span> reacted to your
+                                    recent post <a class="link" href="#">My first tournament today!</a>                            <div class="circle"></div>
+                                </div>
+                                <div class="time">1m ago</div>
+                            </div>
+    
+                        </li>
+                        <li class="notification active"> <img class="user_img" src="./img/avatar-angela-gray.webp"
+                                alt="user-mark">
+                            <div class="notification_wrapper">
+                                <div class="notification_text"><span class="user_name">Angela Gray</span> followed you <div class="circle"></div></div>
+                                <div class="time">5m ago</div>
+                            </div>
+                        </li>
+                        <li class="notification active"> <img class="user_img" src="./img/avatar-jacob-thompson.webp"
+                                alt="user-mark">
+                            <div class="notification_wrapper">
+                                <div class="notification_text">
+                                    <span class="user_name">Jacob Thompson</span> has joined your
+                                    group <a class="link" href="https://www.chess.com/" target="_blank">Chess Club</a> <div class="circle"></div>
+                                </div>
+                                <div class="time">1day ago</div>
+                            </div>
+                        </li>
+                        <li class="notification"> 
+                            <img class="user_img" src="./img/avatar-rizky-hasanuddin.webp"
+                                alt="user-mark">
+                            <div class="notification_wrapper">
+                                <div class="notification_text"><span class="user_name">Rizky Hasanuddin</span> sent you a
+                                    private message</div>
+                                <div class="time">5 days ago</div>
+                            </div>
+                            <div class="private_message">
+                                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                                i'm already having lots of fun and improving my game.
+                            </div>
+                        </li>
+                        <li class="notification"> <img class="user_img" src="./img/avatar-kimberly-smith.webp"
+                                alt="user-mark">
+                            <div class="notification_wrapper">
+                                <div class="notification_text"><span class="user_name">Kimberly Smith</span> commented on
+                                    your picture</div>
+                                <div class="time">1 week ago</div>
+                            </div>
+                            <img class="my_album" src="./img/image-chess.webp" alt="pic_chess">
+                        </li>
+                        <li class="notification"> <img class="user_img" src="./img/avatar-nathan-peterson.webp"
+                                alt="user-mark">
+                            <div class="notification_wrapper">
+                                <div class="notification_text"><span class="user_name">Nathan Peterson</span> reacted to
+                                    your recent post <a class="link" href="#">5 end-game strategies to increase your win rate</a></div>
+                                <div class="time">1m ago</div>
+                            </div>
+                        </li>
+                        <li class="notification"> <img class="user_img" src="./img/avatar-anna-kim.webp"
+                                alt="user-mark">
+                            <div class="notification_wrapper">
+                                <div class="notification_text"><span class="user_name">Anna Kim</span> left the group <a class="link"
+                                        href="https://www.chess.com/" target="_black">Chess Club</a></div>
+                                <div class="time">1m ago</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+<!-- <main>
             <div class='list-of-notifications'>
                 <div class="notification active">
                     <img src='./img/avatar-mark-webber.webp' alt="avatar-mark" class="img-avatar">
@@ -75,10 +164,4 @@
                     </div>
                 </div>
             </div>
-        </main>
-
-    </div>
-
-    <script src="./js/script.js"></script>
-</body>
-</html>
+        </main> -->

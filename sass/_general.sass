@@ -1,0 +1,112 @@
+body
+    background-color: #edf2fb
+
+.window
+    background-color: #fff
+    min-height: 800px
+    margin: 30px auto
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02)
+    border-radius: 10px
+    padding: 30px 25px  
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_left_side
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 160px
+        .title
+            font-size: 20px
+            font-weight: 700
+        .counter
+            font-weight: 700
+            background-color: #0f4c5c
+            width: 30px
+            height: 25px
+            text-align: center
+            border-radius: 5px
+            color: #fff
+    .marks
+        font-size: 13px
+        color: rgba(0, 0, 0, .4)
+        cursor: pointer
+        transition: 0.3s ease
+        &:hover
+            color: rgba(0, 0, 0, 1)
+
+hr
+    color: black
+    height: 4px
+    margin: 5px 0
+
+.notifications
+    list-style-type: none
+    padding: 0
+    margin: 0
+    li
+        padding: 10px 7px
+        position: relative
+        min-height: 75px
+        width: 100%
+        margin-top: 20px
+        border-radius: 5px
+    .notification
+        font-size: 15px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        .user_img
+            width: 65px
+            height: 65px
+            margin-right: 20px
+        &_wrapper
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            .user_name
+                font-weight: 800
+            .time
+                font-size: 14px
+                color: rgba(0, 0, 0, 0.4)
+        &:nth-child(4)
+            flex-wrap: wrap
+            width: 100%
+            .private_message
+                width: 600px
+                font-size: 17px
+                margin: 10px 0 0 85px
+                padding: 15px 20px
+                text-align: justify
+                background-color: #fff
+                color: rgba(0,0,0,0.6   )
+                border: 1px solid rgba(0,0,0,0.2)
+                line-height: 20px
+                transition: 0.3s ease
+                &:hover
+                    background-color: $color-active-notification
+        &:nth-child(5)
+            position: relative
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            img
+                &:nth-of-type(2)
+                    position: absolute
+                    right: 0
+                    margin-right: 7px
+                    width: 60px
+                    height: 60px
+
+    .link
+        @include style-link
+        &:hover
+            color: $color-link-hover
+            
+            
+.active
+    background-color: $color-active-notification
+.circle
+    @include style-circle

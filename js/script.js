@@ -3,11 +3,10 @@ window.addEventListener('DOMContentLoaded', () => {
     function notificationsPage() {
 
         const counter = document.querySelector(".counter"),
-              mark = document.querySelector(".mark"),
+              mark = document.querySelector(".marks"),
               notifications = document.querySelectorAll(".notification"),
-              circleRed = document.querySelectorAll('.circle'),
-              linkChessCLub = document.querySelectorAll(".chess-club");
-    
+              circleRed = document.querySelectorAll('.circle');
+
         countNewNotifications();
         uncheckNewNotifications();
         marksAllAsRead();
@@ -47,6 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 circleRed.forEach(elem => {
                     elem.classList.remove('circle');
                 })
+                countNewNotifications();
             })
         }
     
@@ -54,5 +54,4 @@ window.addEventListener('DOMContentLoaded', () => {
     
     notificationsPage();
 
-}
-)
+})
