@@ -2,6 +2,10 @@
 
 This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+# Attention
+
+If you want to test the full potential of this code - you must download the json server and have a working server!
+
 ## Table of contents
 
 - [Overview](#overview)
