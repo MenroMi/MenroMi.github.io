@@ -9,7 +9,7 @@ function forms(formPost) {
             e.preventDefault();
 
             const divError = document.createElement("div");
-            divError.textContent = "Please, try again.";
+            divError.textContent = "Please, try again. Maybe you have problem with network. Check Readme.";
             divError.classList.add("data_error")
 
             /* AJAX */

@@ -28,7 +28,6 @@ function validator(formPost) {
         let divField;
 
         if (input.id === "month" || input.id === "year") {
-            console.log(input.id);
             divField = input.parentElement.parentElement;
         } else {
             divField = input.parentElement;
