@@ -14,7 +14,7 @@ function forms(formPost) {
 
             /* AJAX */
 
-            const request = new XMLHttpRequest();          
+            const request = new XMLHttpRequest();         
             request.open("POST", "http://localhost:3000/posts");
 
             request.setRequestHeader("Content-type", "application/json");
